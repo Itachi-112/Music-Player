@@ -127,6 +127,7 @@
   }
   
   .player-buttons {
+      margin-left: 40px;
     display: flex;
     justify-content: space-around;
   }
