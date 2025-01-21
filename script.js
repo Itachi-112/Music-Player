@@ -193,6 +193,8 @@ const playSong = (id) => {
   setPlayerDisplay();
   setPlayButtonAccessibleText();
   audio.play();
+   playButton.style.display = "none";
+  pauseButton.style.display = "block";
 };
 
 const pauseSong = () => {
@@ -200,6 +202,8 @@ const pauseSong = () => {
   
   playButton.classList.remove("playing");
   audio.pause();
+   pauseButton.style.display = "none";
+    playButton.style.display = "block";
 };
 
 const playNextSong = () => {
@@ -211,6 +215,7 @@ const playNextSong = () => {
 
     playSong(nextSong.id);
   }
+ 
 };
 
 const playPreviousSong = () => {
